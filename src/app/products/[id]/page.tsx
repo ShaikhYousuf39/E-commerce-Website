@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import { FaShoppingCart } from "react-icons/fa";
-import { ClipLoader } from 'react-spinners';
 
 const ProductPage = ({ params }: { params: { id: string } }) => {
   const [product, setProduct] = React.useState<any>(null);
@@ -28,7 +27,6 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-900">
         <div className="text-center">
-          <ClipLoader color="#00BFFF" size={50} />
           <p className="mt-4 text-white text-xl">Loading...</p>
         </div>
       </div>
